@@ -26,7 +26,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(withFetch()),
     {
       provide: Socket,
-      useFactory: () => io('http://127.0.0.1:5000'), // Replace URL with your Socket.IO server URL
+      useFactory: () => io('http://127.0.0.1:5000'), 
     },
   ],
 };
