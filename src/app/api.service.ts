@@ -5,7 +5,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry, map } from 'rxjs/operators';
 import { tap } from 'rxjs/operators';
 
-// Add Dashboard Data Interface
+
 export interface DashboardData {
   common_questions: {
     top_questions: Array<{
