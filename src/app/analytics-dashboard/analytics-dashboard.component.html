@@ -66,7 +66,7 @@
               <th class="px-4 py-2 text-left text-sm text-gray-600">Question</th>
               <th class="px-4 py-2 text-left text-sm text-gray-600">Count</th>
               <th class="px-4 py-2 text-left text-sm text-gray-600">Last Asked</th>
-              <th class="px-4 py-2 text-left text-sm text-gray-600">Latest Answer</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -74,41 +74,13 @@
               <td class="px-4 py-3">{{q.question}}</td>
               <td class="px-4 py-3">{{q.count}}</td>
               <td class="px-4 py-3">{{formatDate(q.last_asked)}}</td>
-              <td class="px-4 py-3 max-w-md truncate">{{q.latest_answer}}</td>
+              
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Topic Clusters Section -->
-    <!-- <div class="border rounded-lg p-6">
-      <h3 class="text-lg font-medium mb-4">Topic Clusters</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div *ngFor="let cluster of dashboardData?.topic_clusters?.clusters" class="p-4 border rounded-lg">
-          <div class="flex justify-between mb-2">
-            <h4>Cluster {{cluster.cluster_id + 1}}</h4>
-            <span class="text-sm text-gray-600">{{cluster.question_count}} questions</span>
-          </div>
-          <div class="mb-2">
-            <h5 class="text-sm font-medium text-gray-600">Top Terms:</h5>
-            <p class="text-sm">
-              <span *ngFor="let term of cluster.topic_terms; let last = last">
-                {{term}}{{!last ? ', ' : ''}}
-              </span>
-            </p>
-          </div>
-          <div class="mt-2">
-            <h5 class="text-sm font-medium text-gray-600">Sample Questions:</h5>
-            <ul class="text-sm list-disc list-inside">
-              <li *ngFor="let q of cluster.questions.slice(0, 3)" class="truncate">
-                {{q.question}}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
      <!-- Topic Clusters -->
      <div class="border rounded-lg p-6">
