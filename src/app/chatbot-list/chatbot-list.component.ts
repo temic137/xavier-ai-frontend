@@ -96,7 +96,7 @@ export class ChatbotListComponent implements OnInit {
   logout1() {
     this.apiService.logout().subscribe(() => {
       console.log('Logged out successfully');
-      this.router.navigate(['/login']);
+      this.router.navigate(['/']);
     });
   }
 
